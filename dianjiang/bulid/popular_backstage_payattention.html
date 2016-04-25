@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fixed.css" />
+		<style type="text/css">
+			.panel_wrap .nav-tabs{ border-bottom: 1px solid #3EAF0E; }
+			.panel_wrap .nav-tabs > li{ margin-bottom: -1px; }
+			.panel_wrap .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{ border: 1px solid #3EAF0E; border-radius: 0; background: #3EAF0E; color: #fff; }
+			.panel_wrap .nav > li > a{ padding: 4px 15px;  border: 1px solid #3EAF0E; border-radius: 0; background: transparent; color: #333;}
+			.panel_wrap .nav > li > a:hover{ background: #222; color: #fff;}
+			.media-list .media > .media-body{ height: 120px; }
+			.media-list .media > .media-body > .fensi{ position: absolute;bottom: 0; font-size: 14px; color: #808080; }
+			.media-list .media > a img{ width: 120px; height: 120px; border: 1px solid #141010; }
+		</style>
+	</head>
+
+	<body>
+		<!-- 导航条 -->
+		<div class="navbar navbar-fixed-top navbar-default">
+
+			<div class="container-fluid">
+				<div class="row top-bar">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myTab">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100%ter" /></a>
+						</div>
+
+						<div class="collapse navbar-collapse">
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="请输入关键字搜索">
+								</div>
+								<button type="submit" class="btn">搜&ensp;索</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<!--<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><img class="mr5" src="images/touxiang.png" />米巴生活 <span class="caret"></span></a>
+									<ul class="dropdown-menu dropdown-menu-left" role="menu">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">个人资料</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">后台管理</a></li>
+										<li role="presentation" class="divider"></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">退出</a></li>
+									</ul>
+								</li>-->
+								<li class="f16 c666"><a href="#">登录米巴</a></li>
+								<li class="pt15">|</li>
+								<li class="registered f16"><a href="#">注册</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row main-nav">
+					<div class="container">
+						<div class="collapse navbar-collapse" id="myTab">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">首页</a></li>
+								<li><a href="HomeFurnishing.html">家居</a></li>
+								<li><a href="#">服饰</a></li>
+								<li><a href="wonderfulBoWen.html">精彩博文</a></li>
+								<li><a href="platform_activity.html">平台活动</a></li>
+								<li><a href="fine_recommendation.html">精品推荐</a></li>
+								<li><a href="exhibition_works.html">作品展览</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- /.导航条 -->
+
+		<!-- 内容区 -->
+		<div class="container">
+			<div class="row">
+				<div class="container-fluid title mb20">
+					<ul class="nav nav-tabs no-borderBottom">
+						<h3 class="pull-left">
+							<a class="c000" href="index.html">首页</a>&ensp;<i>&gt;</i>&ensp;<span>大众后台</span>
+						</h3>
+					</ul>
+				</div>
+			</div>
+
+
+			<!-- 关注模块 -->
+			<div>
+				<!-- Tab panes -->
+				<div class="tab-content mt10">
+					<div role="tabpanel" class="tab-pane active" id="home">
+						<div class="col-md-2">
+							<ul class="list-unstyled">
+							  <li><span class="glyphicon glyphicon-triangle-bottom c939393 f10"></span>个人中心</li>
+							  <li class="ml30 mt10"><a href="popular_backstage.html" class="c333">个人资料</a></li>
+							  <li class="ml30 mt10"><a href="javascript:;" class="c333">我的关注</a></li>
+							</ul>
+						</div>
+						<!-- 右边内容 -->
+						<div class="col-md-10">
+							<p class="f18 fb c000">我的关注</p>
+							<!-- 我关注的xxx -->
+							<div class="panel_wrap"> 
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#mgzdesigner" data-toggle="tab">我关注的设计师</a></li>
+									<li role="presentation"><a href="#mgzshop" data-toggle="tab">我关注的店铺</a></li>
+								</ul>
+				
+								<!-- Tab panes -->
+								<div class="tab-content mt30">
+									<div role="tabpanel" class="tab-pane active" id="mgzdesigner">
+										<div class="row">
+											<div class="col-md-10">
+												<ul class="media-list">
+												    <li class="media">
+												       	<a class="pull-left" href="#">
+															<img class="media-object" src="images/me.jpg" alt="...">
+														</a>
+														<div class="media-body pr">
+															<h4 class="media-heading mt10">生活小匠</h4>
+															<div class="fensi">粉丝:1000</div>
+														</div>
+												    </li>
+												    <li class="media">
+												        <a class="pull-left" href="#">
+															<img class="media-object" src="images/me.jpg" alt="...">
+														</a>
+														<div class="media-body pr">
+															<h4 class="media-heading mt10">生活小匠</h4>
+															<div class="fensi">粉丝:1000</div>
+														</div>
+												    </li>
+												    <li class="media">
+												        <a class="pull-left" href="#">
+															<img class="media-object" src="images/me.jpg" alt="...">
+														</a>
+														<div class="media-body pr">
+															<h4 class="media-heading mt10">生活小匠</h4>
+															<div class="fensi">粉丝:1000</div>
+														</div>
+												    </li>
+												</ul>
+											</div>
+									
+										</div>
+										
+										<!-- 去掉浮动 一定要加上 -->
+										<div class="clearfix"></div>
+										<div class="text-center">
+											<ul class="pagination mt50">
+												<li>
+													<a href="#" aria-label="Previous">
+														<span aria-hidden="true">&lt;</span>
+													</a>
+												</li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+												<li><a href="#">...</a></li>
+												<li><a href="#">122</a></li>
+												<li>
+													<a href="#" aria-label="Next">
+														<span aria-hidden="true">&gt;</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										
+									</div>
+									<!-- /.我关注的设计师 -->
+									
+									
+									<div role="tabpanel" class="tab-pane" id="mgzshop">
+										<div class="row">
+										<div class="col-md-10">
+											<div class="row">
+												<div class="col-md-6">
+													<ul class="media-list">
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    
+													</ul>
+												</div>
+												<div class="col-md-6">
+													<ul class="media-list">
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													    <li class="media">
+													       	<a class="pull-left" href="#">
+																<img class="media-object" src="images/me.jpg" alt="...">
+															</a>
+															<div class="media-body pr">
+																<h4 class="media-heading mt10">生活小匠</h4>
+																<div class="f14 c808080 mt20">北京大学</div>
+																<div class="f14 mt10">个人简介：爱摄影，也爱设计.</div>
+															</div>
+													    </li>
+													</ul>
+												</div>
+											</div>
+											
+										</div>
+									
+										<!-- 去掉浮动 一定要加上 -->
+										<div class="clearfix"></div>
+										<div class="text-center">
+											<ul class="pagination mt50">
+												<li>
+													<a href="#" aria-label="Previous">
+														<span aria-hidden="true">&lt;</span>
+													</a>
+												</li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+												<li><a href="#">...</a></li>
+												<li><a href="#">122</a></li>
+												<li>
+													<a href="#" aria-label="Next">
+														<span aria-hidden="true">&gt;</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										</div>
+									</div>
+									<!-- /.我关注的店铺 -->
+								</div>
+							</div>
+
+						</div>
+						<!--/.右边内容-->
+					</div>
+				</div>
+			</div>
+			<!-- /.关注模块 -->
+
+		</div>
+		<!-- /. 内容区 -->
+
+		<!-- footer -->
+		<div class="container-fluid footer-nav hidden-xs mt30">
+			<div class="container mt60 mb60">
+				<div class="text-center"><img src="images/OURSHOP.png" /></div>
+				<div class="clearfix mt60">
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="images/foot_globals.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">全球精品</h5>
+								<div class="c808080 f12">Global Selections</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/foot_authenticity.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">正品保证</h5>
+								<div class="c808080 f12">Authenticity Guaranteed</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/foot_free.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">全场包邮</h5>
+								<div class="c808080 f12">Free Delivery</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/foot_gongzuori.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">400-888-2888</h5>
+								<div class="c808080 f12">工作日&ensp;09:00-18:00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid foot-theme hidden-xs">
+			<div class="container">
+				<div class="col-xs-8 col-md-10">
+					<div class="business_cooperation">
+						<a href="##" class="btn"></a>
+						<a href="##" class="btn weibo"></a>
+						<a href="##" class="btn douban"></a>
+					</div>
+					<ul class="copyright clearfix text-left">
+						<li><a href="#">关于众将</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">服务协议</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">隐私保护政策</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">使用指南</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">联系我们</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">加入我们</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">友情链接</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">私信众将</a></li>
+					</ul>
+					<p class="f12 c5f5f5d mb30">© 2013-2015 广州众将文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<div class="pull-right backTop mt10">
+						<a href="##"><img src="images/mess.png" /></a>
+						<a id="global-arrow" href="##"><img src="images/top.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /. footer -->
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/dianj.min.js"></script>
+	<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+	
+</html>

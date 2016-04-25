@@ -1,0 +1,30 @@
+*{margin:0;padding:0;}
+html{font-size:62.5%;width:100%;}
+body{background:#EEE;font:1.4rem/1.6 Arial;color:#666;text-align:center;width:100%;overflow-x:hidden;}
+a{color:#333;text-decoration:none;}
+ul{list-style:none;}
+i,em{font-style:normal;}
+img{vertical-align:top; border: none; outline: none;}
+a{ -webkit-tap-highlight-color: rgba(221,221,221,0.3); }
+
+.wrap{max-width:720px;}
+.block-banner{position:relative;overflow:hidden;background:#E0E0E0;}
+.block-banner .placeholder{width:100%;visibility:hidden;}
+.banner-list{position:absolute;height:100%;width:300%;}
+.banner-list li{ float:left; width: 33.33%; height: 100%;}
+.banner-list li a,
+.banner-list li a img{float:left;height:100%; width: 100%;}
+.block-banner .dotted{position:absolute;bottom:0;left:0;width:100%;text-align:center;font-size:0;}
+.block-banner .dotted i{display:inline-block;width:30%;height:8px;background:rgba(0,0,0,0.7);-webkit-transition:background 0.2s;}
+.block-banner .dotted i.current{background:#D90000;}
+
+.menu{padding:2rem 0;font-size:0;}
+
+.menu li{display:inline-block;margin:0 0 1.5rem;vertical-align:top;width:30%; background: #fff;}
+.menu li a{ display: block; width: 100%; padding: 10% 0 11%;}
+.menu li:nth-child(2),
+.menu li:nth-child(5){margin:0 3% 1.5rem;}
+/*.menu li a,*/
+.menu li img{width:80%;}
+/*.menu li a{ display: block; padding: 4%; }*/
+.menu li a p{ font-size: 1.4rem; color: #333; font-family: "Adobe 黑体 Std"; margin-top: .6rem;}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>众将登录</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fixed.css" />
+		<style type="text/css">
+			body {
+				padding: 0;
+				width: 100%;
+				height: 828px;
+				background: url(images/bg_logo.jpg) no-repeat center/cover;
+			}
+			.logo_wrap {
+				position: absolute;
+				padding: 0 30px 30px;
+				width: 325px;
+				height: 331px;
+				top: 175px;
+				left: 50%;
+				margin-left: -162.5px;
+				background: url(images/logo_bg.png) no-repeat;
+			}
+			.input-group-addon{ background: #CACACA; }
+			.input-group-addon .glyphicon{ color: #fff; }
+			.form-control,.input-group-addon{ border-radius: 0; }
+			.forget{ font-size: 12px; color: #fff; margin-top: 10px; }
+			.forget a{ color:#fff }
+			.btn-theme{ background: #3EAF0E; border-radius: 0; color: #fff; }
+			.welcome{ font-size: 30px; color: #fff; float: left; margin-left: 20px; margin-top: 30px;}
+			@media (max-width: 768px) {
+				.welcome{
+					margin-top: 8px;
+					font-size: 24px;
+					position: absolute;
+					margin-left: 0;
+					left: 50%;
+					margin-left: -48px;
+				}
+				.logo_wrap {top: 100px;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 导航条 -->
+		<div class="navbar" style="border: 0; background: #222; border-radius: 0; margin: 0;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="container">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#"><img src="images/logo2.png" height="100%ter" /></a>
+							<div class="welcome">欢迎登录</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.导航条 -->
+
+		<!-- 内容区 -->
+		<div class="container-fluid">
+			<div class="row">
+				<!--<img src="images/bg_logo.jpg" width="100%" />-->
+				<div class="logo_wrap">
+					<div class="f18 cfff text-center mt30">会员登录</div>
+					<form class="form-group mt30">
+						<div class="form-group">
+							<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+							<div class="input-group">
+								<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+								<input type="text" class="form-control" id="exampleInputAmount" placeholder="邮箱/手机号">
+							</div>
+							<div class="input-group mt10">
+								<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+								<input type="password" class="form-control" id="exampleInputAmount" placeholder="密码">
+							</div>
+							<div class="forget"><a href="#">忘记密码?</a><a href="#" class="pull-right">免费注册</a></div>
+						</div>
+						<button type="button" class="btn btn-theme btn-lg btn-block">登录</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- /. 内容区 -->
+	</body>
+
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fixed.css" />
+		<style type="text/css">
+			.title .nav-tabs {border-bottom: 1px solid #f0f0f0;}
+			.nav-theme2 > li {margin-bottom: -2px;}
+			.nav-theme2 > li.active a {border-bottom: 0;background-color: #222;border-radius: 0;color: #fff;}
+			.nav-page {padding-bottom: 10px;}
+			.nav-page > a {background: #8a8a8a;color: #fff;border-radius: 0;transition: .4s all ease-out;}
+			.nav-page > a.active {background: #333;}
+			.nav-page > a.active:hover {background: transparent;color: #333;border: 1px solid #333;}
+			.nav-page > a:hover {background: transparent;color: #8a8a8a;border: 1px solid #8a8a8a;}
+			.nav-tabs {border-bottom: 0;}
+			.nav-tabs > li.active > a {border: none;}
+			.nav-tabs > li > span {display: inline-block;padding-top: 10px;}
+			.nav-tabs > li.active > a:hover,
+			.nav-tabs > li.active > a:focus {border: none;}
+			.nav > li > a {border: none;color: #8A8A8A;}
+			.nav > li > a:hover,
+			.nav > li > a:focus {background-color: transparent;border: none;text-decoration: underline;}
+			.nav > li.active > a:hover,
+			.nav > li.active > a:focus {background-color: transparent;border: none;text-decoration: none;}
+			.zj-form .control-label{ padding-right: 0px; }
+			.zj-form .form-control{ border-radius: 0; border: 1px solid #a0a0a0; }
+			.zj-form select.form-control{ width: 30%; display: inline-block; margin-left: 10px; }
+			.btn-upload,.btn-upload:hover,.btn-upload:focus{ background: #0099cc; color: #fff; border-radius: 0; }
+			.btn-setting,.btn-setting:hover,.btn-setting:focus{ background: #3eaf0e; color: #fff; border-radius: 0; }
+			.btn-white,.btn-white:hover,.btn-white:focus{ background: transparent; color: #222; border-radius: 0; border: 1px solid #222;text-align: left;}
+			.btn-width{ width: 300px; }
+			.panel{background-color: transparent; border: none; border-radius: 0; -webkit-box-shadow:none;box-shadow:none;}
+			.panel-body{ padding: 30px 0; }
+		</style>
+	</head>
+
+	<body>
+		<!-- 导航条 -->
+		<div class="navbar navbar-fixed-top navbar-default">
+
+			<div class="container-fluid">
+				<div class="row top-bar">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myTab">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100%ter" /></a>
+						</div>
+
+						<div class="collapse navbar-collapse">
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="请输入关键字搜索">
+								</div>
+								<button type="submit" class="btn">搜&ensp;索</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<!--<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><img class="mr5" src="images/touxiang.png" />米巴生活 <span class="caret"></span></a>
+									<ul class="dropdown-menu dropdown-menu-left" role="menu">
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">个人资料</a></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">后台管理</a></li>
+										<li role="presentation" class="divider"></li>
+										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">退出</a></li>
+									</ul>
+								</li>-->
+								<li class="f16 c666"><a href="#">登录米巴</a></li>
+								<li class="pt15">|</li>
+								<li class="registered f16"><a href="#">注册</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row main-nav">
+					<div class="container">
+						<div class="collapse navbar-collapse" id="myTab">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">首页</a></li>
+								<li><a href="HomeFurnishing.html">家居</a></li>
+								<li><a href="#">服饰</a></li>
+								<li><a href="wonderfulBoWen.html">精彩博文</a></li>
+								<li><a href="platform_activity.html">平台活动</a></li>
+								<li><a href="fine_recommendation.html">精品推荐</a></li>
+								<li><a href="exhibition_works.html">作品展览</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- /.导航条 -->
+
+		<!-- 内容区 -->
+		<div class="container mt20">
+
+			<div class="row">
+
+				<div class="container-fluid recommended-design">
+					<div style="border-bottom: 1px solid #a5a5a5;">
+						<div class="nav-page">
+							<a href="javascript:;" class="btn btn-big mr10 active">个人中信</a>
+							<a href="dp_homepage_management.html" class="btn btn-big">作品管理</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.个人中心 -->
+			</div>
+
+			<!-- 基本资料 -->
+			<div>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" data-toggle="tab">基本资料</a></li>
+					<li><span>|</span></li>
+					<li role="presentation"><a href="#edu_info" data-toggle="tab">教育信息</a></li>
+					<li><span>|</span></li>
+					<li role="presentation"><a href="#my_honor" data-toggle="tab">我的荣誉</a></li>
+					<li><span>|</span></li>
+					<li role="presentation"><a href="#team_manage" data-toggle="tab">团队管理</a></li>
+					<li><span>|</span></li>
+					<li role="presentation"><a href="#my_act" data-toggle="tab">我参与的活动</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content mt30">
+					<div role="tabpanel" class="tab-pane active" id="home">
+						<div class="col-md-6">
+							<form class="form-horizontal zj-form">
+								<div class="form-group">
+									<label for="nicheng" class="col-sm-2 control-label">账户昵称</label>
+									<div class="col-sm-10">
+										<input type="text" id="nicheng" class="form-control"  placeholder="刘德华">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+									<div class="col-sm-6">
+										<input type="password" class="form-control" id="inputPassword3" placeholder="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword3" class="col-sm-2 control-label">性别</label>
+									<div class="col-sm-10">
+										<label class="radio-inline">
+                                                <input name="optionsRadios2" value="option1" type="radio">
+                                            <span>
+                                                 男
+                                            </span>
+                                        </label>
+										<label class="radio-inline">
+                                                <input name="optionsRadios2" value="option1" type="radio">
+                                            <span>
+                                                 女
+                                            </span>
+                                        </label>
+                                        <!--<select class="form-control">
+                                            <option value="Category 1">
+                                                所有人可见
+                                            </option>
+                                            <option value="Category 2">
+                                               自己可见
+                                            </option>
+                                            <option value="Category 3">
+                                                不可见
+                                            </option>
+                                        </select>-->
+									</div>
+								</div>
+								<!--<div class="form-group">
+									<label for="" class="col-sm-2 control-label">所在地</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputPassword3" placeholder="">
+									</div>
+								</div>-->
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">生日</label>
+									<div class="col-sm-6">
+										<input type="date" class="form-control" id="inputPassword3" placeholder="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">联系电话</label>
+									<div class="col-sm-6">
+										<input type="tel" class="form-control" id="inputPassword3" placeholder="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">联系地址</label>
+									<div class="col-sm-10">
+										<input type="tel" class="form-control" id="inputPassword3" placeholder="广州市天河区员村西街2号院广纺联产业园45号183C">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">个人简介</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="4"> </textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">设计理念</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="4"> </textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-big btn-black">确定</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+						
+						<!-- 头像 -->
+						<div class="col-md-6">
+							<div class="ml30" style="max-width: 100px;">
+								<div><img src="images/tt.jpg"/></div>
+								<button class="btn btn-block btn-black mt10">更改头像</button>
+							</div>
+						</div>
+					</div>
+					<!-- /.基本资料 -->
+					
+					<div role="tabpanel" class="tab-pane" id="edu_info">
+						<div class="col-md-6">
+							<form class="form-horizontal zj-form">
+								<div class="form-group">
+									<label for="school" class="col-sm-2 control-label">学校</label>
+									<div class="col-sm-10">
+										<input type="text" id="school" class="form-control"  placeholder="中山大学">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="yx" class="col-sm-2 control-label">院系</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="yx" placeholder="信息管理学院">
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-big btn-black">确定</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+					<!-- /.教育信息 -->
+					<div role="tabpanel" class="tab-pane" id="my_honor">
+						<div class="col-md-6">
+							<form class="form-horizontal zj-form">
+								<div class="form-group">
+									<label for="huojiang" class="col-sm-2 control-label">所获奖项</label>
+									<div class="col-sm-10">
+										<input type="text" id="huojiang" class="form-control"  placeholder="获奖内容">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="hjdate" class="col-sm-2 control-label">获奖日期</label>
+									<div class="col-sm-6">
+										<input type="date" class="form-control" id="hjdate">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="hjxq" class="col-sm-2 control-label">获奖心情</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="4"> </textarea>
+									</div>
+								</div>
+								<div class="form-group mt50">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-sm btn-upload">上传图片</button>
+										<button type="submit" class="btn btn-sm btn-setting ml20">设置封面</button>
+										<span>（说明：显示至设计师主页）</span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="hjxq" class="col-sm-2 control-label">获奖心情</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="8"> </textarea>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-big btn-black">确定</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+					<!-- /.我的荣誉 -->
+					<div role="tabpanel" class="tab-pane" id="team_manage">
+						<div class="col-md-6">
+							<form class="form-horizontal zj-form">
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">团队名称</label>
+									<div class="col-sm-10">
+										<input type="text" id="" class="form-control"  placeholder="傻×组合">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">团队口号</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" id="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">团队介绍</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="4"> </textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">创建日期</label>
+									<div class="col-sm-6">
+										<input type="date" class="form-control" id="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="hjxq" class="col-sm-2 control-label">获奖心情</label>
+									<div class="col-sm-10">
+										<button type="submit" class="btn btn-big btn-upload">添加设计师</button>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-big btn-black">确定</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- 团队管理 -->
+					<div role="tabpanel" class="tab-pane" id="my_act">
+						<label style="padding-right: 0px; width: 11%;" class="col-sm-2 control-label">参与的活动</label>
+						
+						<div class="col-sm-6">
+							
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel">
+									<div class="header" role="tab" id="headingOne">
+										<a class="btn btn-white btn-width text-left" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">线下设计师交流会<span class="toggle glyphicon glyphicon-chevron-up pull-right"></span></a>
+										<button class="btn btn-big btn-black"><span class="glyphicon glyphicon-share-alt"></span>分享</button>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<p class="f14 c333 fb">活动介绍</p>
+											<p class="f12 c666 lh180">为丰富平台的作品,给在校有才的青年设计师提供一个免费的展现平台,点匠决定举办一个在线设计作品展,欢迎所有的大学生参与/为丰富平台的作品,给在校有才的青年设计师提供一个展现平台,点匠决定举办一个在线设计作品展,欢迎所有的大学生参与</p>
+											<p class="f14 c333 fb">活动参与对象</p>
+											<p class="f12 c666 lh180">所有在校大学生,对自己作品有信心,有意愿参与的设计师,均可报名参与</p>
+											<p class="f14 c333 fb">活动报名时间</p>
+											<p class="f12 c666 lh180">2015/8/15 - 2015/8/20</p>
+											<p class="f14 c333 fb">报名方式</p>
+											<p class="f12 c666">1.各校大学生，可持学生证到平台驻扎活动点进行现场报名</p>
+											<p class="f12 c666">2.各大高校学生可通过微博、微信、或平台直接线上报名，自主上传作品。</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="panel">
+									<div class="header" role="tab" id="headingTwo">
+											<a class="btn btn-white btn-width text-left" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">线下设计师交流会<span class="toggle glyphicon glyphicon-chevron-down pull-right"></span></a>
+											<button class="btn btn-big btn-black"><span class="glyphicon glyphicon-share-alt"></span>分享</button>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<p class="f14 c333 fb">活动介绍</p>
+											<p class="f12 c666 lh180">为丰富平台的作品,给在校有才的青年设计师提供一个免费的展现平台,点匠决定举办一个在线设计作品展,欢迎所有的大学生参与/为丰富平台的作品,给在校有才的青年设计师提供一个展现平台,点匠决定举办一个在线设计作品展,欢迎所有的大学生参与</p>
+											<p class="f14 c333 fb">活动参与对象</p>
+											<p class="f12 c666 lh180">所有在校大学生,对自己作品有信心,有意愿参与的设计师,均可报名参与</p>
+											<p class="f14 c333 fb">活动报名时间</p>
+											<p class="f12 c666 lh180">2015/8/15 - 2015/8/20</p>
+											<p class="f14 c333 fb">报名方式</p>
+											<p class="f12 c666">1.各校大学生，可持学生证到平台驻扎活动点进行现场报名</p>
+											<p class="f12 c666">2.各大高校学生可通过微博、微信、或平台直接线上报名，自主上传作品。</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<div class="header" role="tab" id="headingThree">
+										<a class="btn btn-white btn-width text-left" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">线下设计师交流会<span class="toggle glyphicon glyphicon-chevron-down pull-right"></span></a>
+										<button class="btn btn-big btn-black"><span class="glyphicon glyphicon-share-alt"></span>分享</button>
+									</div>
+									<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<div class="panel-body">
+											<p class="f14 c333 fb">活动介绍</p>
+											<p class="f12 c666 lh180">为丰富平台的作品,给在校有才的青年设计师提供一个免费的展现平台,点匠决定举办一个在线设计作品展,欢迎所有的大学生参与/为丰富平台的作品,给在校有才的青年设计师提供一个展现平台,点匠决定举办一个在线设计作品展,欢迎所有的大学生参与</p>
+											<p class="f14 c333 fb">活动参与对象</p>
+											<p class="f12 c666 lh180">所有在校大学生,对自己作品有信心,有意愿参与的设计师,均可报名参与</p>
+											<p class="f14 c333 fb">活动报名时间</p>
+											<p class="f12 c666 lh180">2015/8/15 - 2015/8/20</p>
+											<p class="f14 c333 fb">报名方式</p>
+											<p class="f12 c666">1.各校大学生，可持学生证到平台驻扎活动点进行现场报名</p>
+											<p class="f12 c666">2.各大高校学生可通过微博、微信、或平台直接线上报名，自主上传作品。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					<!-- /.我的参与的活动 -->
+				</div>
+			</div>
+			<!-- /.基本资料 -->
+
+		</div>
+		<!-- /. 内容区 -->
+
+		<!-- footer -->
+		<div class="container-fluid footer-nav hidden-xs mt30">
+			<div class="container mt60 mb60">
+				<div class="text-center"><img src="images/OURSHOP.png" /></div>
+				<div class="clearfix mt60">
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="images/foot_globals.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">全球精品</h5>
+								<div class="c808080 f12">Global Selections</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/foot_authenticity.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">正品保证</h5>
+								<div class="c808080 f12">Authenticity Guaranteed</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/foot_free.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">全场包邮</h5>
+								<div class="c808080 f12">Free Delivery</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-3">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/foot_gongzuori.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading">400-888-2888</h5>
+								<div class="c808080 f12">工作日&ensp;09:00-18:00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid foot-theme hidden-xs">
+			<div class="container">
+				<div class="col-xs-8 col-md-10">
+					<div class="business_cooperation">
+						<a href="##" class="btn"></a>
+						<a href="##" class="btn weibo"></a>
+						<a href="##" class="btn douban"></a>
+					</div>
+					<ul class="copyright clearfix text-left">
+						<li><a href="#">关于众将</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">服务协议</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">隐私保护政策</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">使用指南</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">联系我们</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">加入我们</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">友情链接</a></li>
+						<li><span>|</span></li>
+						<li><a href="#">私信众将</a></li>
+					</ul>
+					<p class="f12 c5f5f5d mb30">© 2013-2015 广州众将文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
+				</div>
+				<div class="col-xs-4 col-md-2">
+					<div class="pull-right backTop mt10">
+						<a href="##"><img src="images/mess.png" /></a>
+						<a id="global-arrow" href="##"><img src="images/top.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /. footer -->
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/dianj.min.js"></script>
+	<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.collapse').on('hidden.bs.collapse', function () {
+			var $p = $(this).siblings('.header');
+			var $target = $p.find('span.toggle');
+			$target.removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+		})
+		$('.collapse').on('shown.bs.collapse', function () {
+			var $p = $(this).siblings('.header');
+			var $target = $p.find('span.toggle');
+			$target.removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+		})
+	</script>
+
+</html>
